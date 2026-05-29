@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bg_list.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display';
+}
+header {
+    width: auto;
+    text-align: center;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+header p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+.directors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+    max-width: 1000px; /* ограничиваем ширину контейнера */
+    margin: 0 auto;
+}
+
+.director-card {
+    display: block;
+    width: 200px; /* просто ширина */ 
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.4s ease;
+}
+
+.director-card:hover {
+    bottom: 30px;
+    transform: scale(1.08);
+}
+
+.director-card img {
+    width: 160px;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    border: 2.5px solid white;
+    margin: 0 auto;
+}
+
+.p-big {
+    color: white;
+    margin: 7px;
+    font-size: 20px;
+}
+
+.p-small {
+    color: #A2A2A2;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    padding: 0;
+    color: white;
+    font-size: 52px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+footer {
+    width: auto;
+    text-align: center;
+    height: 27px;
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    margin-top: 100px;
+    line-height: 27px;
+    font-size: 13px;
+    color:#A2A2A2;
+}
+
+
+#return-button-child {
+    position: absolute;
+    z-index: 2;
+    width: 600px;
+    height: 100px;
+    inset: -25px 0px 0px 50px;
+}
+
+.return-button {
+    width: 30%;
+    transition: transform 0.4s ease;
+}
+
+.return-button:hover {
+    bottom: 30px;
+    transform: scale(1.1);
+}
+
+
+.page-main {
+    position: relative;
+}
